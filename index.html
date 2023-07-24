@@ -40,27 +40,34 @@
 	<!-- external CSS link -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
-	<header>
-		<nav>
-			<a href="/">
-				<img src="img/logo.png" alt="Logo" class="logo">
+	<header class="header">
+		<nav id="nav-menu">
+			<a href="/" class="logo">
+				<img  id="menu-icon" src="img/logo.png" alt="Logo" class="logo">
 			</a>
 
 			<ul class="nav-menu">
-				<li class="nav-link">
+				<li class="nav-link home" >
+					<a href="#home">Home</a>
+				</li>
+				<li class="nav-link about">
 					<a href="#about">About</a>
 				</li>
-				<li class="nav-link">
+				<li class="nav-link skills">
+					<a href="#skills">Skills</a>
+				</li>
+				<li class="nav-link projects">
 					<a href="#projects">Projects</a>
 				</li>
-				<li class="nav-link">
+				<li class="nav-link contact">
 					<a href="#contact">Contact</a>
 				</li>
-				<li class="nav-link">
-					<a href="https://drive.google.com/drive/folders/1t58j0rDGz38tB-TYooWYN79laSym_kyx?usp=share_link"
+				<li id="resume-button-1" class="nav-link resume" >
+					<a href="https://drive.google.com/drive/folders/1t58j0rDGz38tB-TYooWYN79laSym_kyx?usp=share_link" id="resume-link-1" download="Prashant-Kad-Resume"
 						target="_blank">Résumé</a>
 				</li>
 
@@ -86,9 +93,9 @@
 	</header>
 
 	<main>
-		<section>
+		<section class="home" id="home" class="home-content">
 			<span class="salutation">Hi there!</span>
-			<h1>
+			<h1 id="user-detail-name">
 				I am <span class="name-highlight">Prashant Kad</span>.
 			</h1>
 
@@ -100,13 +107,13 @@
 			</p>
 
 			<div class="cta-box">
-				<a href="#contact" class="cta cta1">Reach out</a>
-				<a href="https://drive.google.com/file/d/1THpNJsCXtJKWxpG_PfYCPAfeK4f-zb8b/view?usp=share_link"
+				<a  href="#contact" class="cta cta1">Reach out</a>
+				<a id="resume-button-2" href="https://drive.google.com/file/d/1THpNJsCXtJKWxpG_PfYCPAfeK4f-zb8b/view?usp=share_link"
 					target="_blank" class="cta cta2">Résumé</a>
 			</div>
 		</section>
 
-		<aside class="main-social-links social-links">
+		<aside class="main-social-links social-links social-media">
 			<a href="https://github.com/prashant7650" target="_blank" class="social github">
 				<img src="img/github.svg" alt="GitHub Icon">
 			</a>
@@ -119,13 +126,13 @@
 		</aside>
 	</main>
 
-	<section id="about">
+	<section id="about" class="about section">
 		<div class="separator">
 			<h2>About</h2>
 		</div>
 
-		<div>
-			<p class="about-text">
+		<div class="about-content">
+			<p class="about-text " id="user-detail-intro">
 				Efficient full-stack web developer, having the problem-solving ability. A good learner and always excited to learn new things in terms of technology. Skilled in teamwork, collaboration, time management. Looking for an opportunity to work in a challenging position for a technology-driven organization.
 				<br>
 				
@@ -149,19 +156,258 @@
 			<img src="img/img resume.jpg" class="profile-img" alt="img resume.jpg">
 		</div>
 	</section>
+<!-- skills -->
+<section id="skills" class="skills" >
+	<div class="container tags">
+	  <h2 class="heading" >Skills &
+		<span>Abilities</span></h2>
 
-	<section id="projects">
-		<div class="featured-projects-box">
+	  <ul class="grid-list">
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="./images/html"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="HTML"
+			/>
+
+			<p class="skills-card-name">HTML</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="./images/css.png"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="CSS"
+			/>
+
+			<p class="skills-card-name">CSS</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="JavaScript"
+			/>
+
+			<p class="skills-card-name">JavaScript</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="NodeJS"
+			/>
+
+			<p class="skills-card-name">NodeJS</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="Express"
+			/>
+
+			<p class="skills-card-name">Express</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="MongoDB"
+			/>
+
+			<p class="skills-card-name">MongoDB</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="Mongoose"
+			/>
+
+			<p class="skills-card-name">Socket.io</p>
+		  </button>
+		</li>
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			class="skills-card-img"
+			src="./images/react.png"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			
+			/>
+
+			<p class="skills-card-name">React</p>
+		  </button>
+		</li>
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			class="skills-card-img"
+			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			
+			/>
+
+			<p class="skills-card-name">MySQL</p>
+		  </button>
+		</li>
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  src="./images/redis.svg"
+			  class="skills-card-img"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="GIT"
+			/>
+
+			<p class="skills-card-name">Redis</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  class="skills-card-img"
+		
+			/>
+
+			<p class="skills-card-name">GIT</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			  class="skills-card-img"
+			  src="./images/npm.svg"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			  alt="NPM"
+			/>
+
+			<p class="skills-card-name">NPM</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			class="skills-card-img"
+			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			
+			/>
+
+			<p class="skills-card-name">VSCode</p>
+		  </button>
+		</li>
+
+		<li>
+		  <button class="skills-card tag-btn">
+			<img
+			class="skills-card-img"
+			src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+			  width="32"
+			  height="32"
+			  loading="lazy"
+			
+			/>
+
+			<p class="skills-card-name">Bootstrap </p>
+		  </button>
+		</li>
+	  </ul>
+	</div>
+
+		<div class="skills-container">
+		<div class="skills-card-1">
+		  <i class='bx bx-code-alt' class="skills-card-img"></i>
+		  <h3 class="skills-card-name">Front-End Development</h3>
+		  <p>HTML | CSS | JavaScript</p>
+		  <a href="#" class="button">Read More</a>
+		</div>
+		<div class="skills-card-1">
+		  <i class='bx bxs-data' class="skills-card-img"></i>
+		  <h3 class="skills-card-name">Back-End Development</h3>
+		  <p>NodeJS | Express | MongoDB </p>
+		  <a href="#" class="button">Read More</a>
+		</div>
+		<div class="skills-card-1">
+		  <i class='bx bxl-codepen' class="skills-card-img"></i>
+		  <h3 class="skills-card-name">Data Structure Algorithm</h3>
+		  <p> LinkedList | Recursion | Binary </p>
+		  <a href="#" class="button">Read More</a>
+		</div>
+	  </div>  
+  
+  </section> 
+<!-- skills end -->
+
+	<section class="project" id="projects">
+	<div class="featured-projects-box">
 			<div class="separator">
 				<h2>Projects</h2>
 			</div>
 
-			<div class="project project1">
+			<div class="project project-card project1">
 				<div class="project-details-box">
 					<div class="project-main-info">
 						<span>Project #1</span>
-						<h3>E-Shopping Mart</h3>
-						<p>
+						<h3 class="project-title" >E-Shopping Mart</h3>
+						<p class="project-description">
 							This is a website which is developed by implementing the E-Shopping Mart. This Website is allow you to buy any kinds of products like Dresses, Shoes, Accessories, Gift & Candles, Beauty and wellness etc. 
 						</p>
 
@@ -175,7 +421,7 @@
 						</div>
 					</div>
 
-					<div class="project-tools">
+					<div class="project-tools project-tech-stack">
 						<p>HTML5, CSS3, JavaScript, API</p>
 					</div>
 				</div>
@@ -187,12 +433,12 @@
 				</div>
 			</div>
 
-			<div class="project project2">
+			<div class="project project-card project2">
 				<div class="project-details-box">
 					<div class="project-main-info">
 						<span>Project #2</span>
-						<h3>J-Crew</h3>
-						<p>
+						<h3 class="project-title">J-Crew</h3>
+						<p class="project-description">
 							It's an E-Commerse website of clothing product throw this website you can buy products like gents, womens, boys, girls, kids etc..
 					
 						</p>
@@ -207,7 +453,7 @@
 						</div>
 					</div>
 
-					<div class="project-tools">
+					<div class="project-tools project-tech-stack">
 						<p>HTML5, CSS3, JavaScript</p>
 					</div>
 				</div>
@@ -219,12 +465,12 @@
 				</div>
 			</div>
 
-			<div class="project project3">
+			<div class="project project-card project3">
 				<div class="project-details-box">
 					<div class="project-main-info">
 						<span>Project #3</span>
-						<h3>Indian Mart</h3>
-						<p>
+						<h3 class="project-title">Indian Mart</h3>
+						<p class="project-description">
 							This is a website which is developed by implementing the Indian Mart. this website you can refer for planning to build your home, It is also refer for to choose the correct pharmaceutical product fot good health and also it will help for to buy products like electric and electronics.
 						</p>
 
@@ -238,7 +484,7 @@
 						</div>
 					</div>
 
-					<div class="project-tools">
+					<div class="project-tools" project-tech-stack>
 						<p>WordPress, HTML5, CSS3</p>
 					</div>
 				</div>
@@ -249,7 +495,7 @@
 					</a>
 				</div>
 			</div>
-
+    </div>
 			
 	</section>
 
@@ -281,7 +527,7 @@
 	</section>
 
 	<footer>
-		<p>designed and developed by <span>Daniel Ezekiel</span></p>
+		<p>designed and developed by <span>Prashant Kad</span></p>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
