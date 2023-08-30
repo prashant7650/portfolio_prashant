@@ -2,7 +2,11 @@ const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('#nav-menu');
 const menuList = document.querySelector('.nav-menu');
 
+
+
 menuBtn.addEventListener('click', showMenu);
+
+
 
 function showMenu(){
     menuBtn.classList.toggle('is-active');
