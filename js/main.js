@@ -11,7 +11,7 @@
 // }
 
 
-// *=============================== toggle icon navbar ==================================
+
 
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('#nav-menu')
@@ -21,11 +21,8 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active')
 };
 
-// *=============================== github calender ==================================
-    GitHubCalendar(".calendar", "vaibhzz101");
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "vaibhzz101", { responsive: true });
+
 
 // *=============================== resume open in new tab ==================================
 
@@ -35,7 +32,7 @@ menuIcon.onclick = () => {
 
     function NewTab() {
       window.open(
-        "https://drive.google.com/file/d/16tQUUbquZpysvg0H4ZR6gTEdReZQuqjO/view",
+        "https://drive.google.com/drive/folders/1t58j0rDGz38tB-TYooWYN79laSym_kyx?usp=share_link",
         "_blank"
       );
     }
